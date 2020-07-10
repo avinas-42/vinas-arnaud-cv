@@ -1,0 +1,33 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href='/stylesheets/cv.css' />
+    <link rel='stylesheet' href='/stylesheets/pandesim.css'>
+</head>
+<html>
+    <header>
+        <% include ./partials/menu.ejs %>
+    </header>
+    <body>
+        <div>
+            <input id="imunisation" type="checkbox">imunisation</input>
+            <input id="display" type="checkbox">affichage</input>
+            <br>
+            <input type="number" id="nbdaymin" value="8">jours d'incubation minimum</input>
+            <input type="number" id="nbdayvar" value="7">variation du temps d'incubation</input>
+            <br>
+            <input type="number" id="nbsafe" value="1000">personne</input>
+            <input type="number" id="nbsick" value="4">personne malade</input>
+            <br>
+            <button id="lancer" >lancer simulation</button>
+        </div>
+        <div class="content">
+            <canvas id="canvas" width="820" height="760" class="simu"></canvas>
+            <div class="ordo"> <p>100%</p> <p>50%</p> <p>0%</p> </div>
+            <div class="graph" >
+                <canvas id="graph" width="10000" height="750" ></canvas>
+            </div>
+        </div>
+
+        <script type="module" src="/javascripts/covid.js"></script> 
+    </body>
+</html>

@@ -5,3 +5,14 @@
     justify-content: space-around;
     background-color: #BD896D;
 }
+button {
+    background-color: #a6bdbc;
+    min-width: 150px;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}

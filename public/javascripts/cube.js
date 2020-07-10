@@ -36,11 +36,11 @@ function displayVideo() {
 
 async function init() {
     rotate(document.getElementById("back"));
-    await sleep(0.5);     
+    await sleep(0.7);     
     rotate(document.getElementById("bottom"));
-    await sleep(1);
+    await sleep(0.7);
     rotate(document.getElementById("front"));
-    await sleep(1);
+    await sleep(0.5);
     displayVideo();
 
 }
