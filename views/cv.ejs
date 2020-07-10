@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/cv.css' />
+    <link rel='stylesheet' href='/stylesheets/cube.css' />
+  </head>
+  <body>
+    <header>
+      <% include ./partials/menu.ejs %>
+    </header>
+    <section class="center">
+      <article class="center">
+        <div class="scene">
+          <div class="cube">
+            <div id="front" class="cube__face cube__face--front" onclick="rotate(this)">
+              <article class="contact but-select-anyway"> 
+                <li>
+                  <ul>
+                    <h4>+33651711200</h4>
+                    <h4>vinas_arnaud@yahoo.fr</h4>
+                    <h4>3 rue Daru 75008 Paris</h4>
+                    <h4>24 ans</h4>
+                  </ul>
+                </li>
+              </article>
+              <article class="text but-select-anyway">
+                <p>je recherche actuellement une alternance de 12 mois pour valider un titre Ingésup de niveau 1 (bac+5) d’Expert(e) en Technologie de l’Information</p>
+              </article>
+
+            </div>
+            <div id="right" class="cube__face cube__face--right" onclick="rotate(this)">
+              <h3 class="titre but-select-anyway">Formation</h3>
+              <article class="text but-select-anyway">
+                <p>2017-2020 : Ecole 42</p>
+                <p>2014-2016 : Préparation d'un DUT informatique (IUT du havre 76)</p>
+                <p>2012 : BAFA</p>
+                <p>2014 : Baccalauréat STI2D mention Assez Bien (Le Mans 72)</p>
+              </article>
+            </div>
+            <div id="back" class="cube__face cube__face--back" onclick="rotate(this)">
+              <h3 class="titre but-select-anyway">Competence</h3>
+              <article class="text but-select-anyway">
+                <p>Langages de programmation : Java, JavaScript, C#, C, C++, Python, BASIC, PHP, HTML/CSS.</p>
+                <p>Système embarqué: raspberry pi, IMX6 rex, arduino.</p>
+                <p class="floating-left">Système d’exploitation: </p>
+                <img class="floating-left" src="/images/os.png" alt="windows, linux, macos icone">
+                <br>
+                <br>
+              </article>
+            </div>
+            <div id="left" class="cube__face cube__face--left" onclick="rotate(this)">
+              <h3 class="titre but-select-anyway">Experiences Professionnelles</h3>
+              <article class="text but-select-anyway">
+                <p>été 2014, 2015 et 2016 : Responsable du stage roller skate trottinette en colonie à Poitiers pour CapJunior</p>
+                <p>2017 : Stage de DUT informatique à la Ferté-Bernard chez visteon</p>
+                <p>2018-09-25 à 2019-03-25 : stage chez Mattech comme développeur full stack. rapport de stage: https://www.dailymotion.com/video/x770zyb</p>
+                <p>2019-07 à 2020 : cours à domicile de développement informatique en c, java, php, nodejs, express, react</p>
+              </article>
+
+            </div>
+            
+            <div id="top" class="cube__face cube__face--top" onclick="rotate(this)">
+              <h3 class="titre but-select-anyway">Langue</h3>
+              <article class="text but-select-anyway">
+                <p>Anglais : courant </p>
+              </article>
+            </div>
+            <div id="bottom" class="cube__face cube__face--bottom" onclick="rotate(this)">
+              <h3 class="titre but-select-anyway">Centre d’intérêts</h3>
+              <article class="text but-select-anyway">
+                <p>roller acrobatique (15 ans)</p>
+                <p>karate (5 ans)</p>
+                <p>guitare (10 ans) </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <script src="/javascripts/cube.js"></script>
+
+      <!-- 
+      
+      
+      
+
+      
+
+    -->
+  </body>
+</html>

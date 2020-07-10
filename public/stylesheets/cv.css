@@ -1,0 +1,41 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #A6BDBC;
+  height: 60%;
+}
+
+a {
+  color: #00B7FF;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  margin-top: 8px;
+  height: 30px;
+} 
+.floating-left {
+  float: left;
+}
+.center
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.titre {
+  margin-top: 38%;
+  margin-left: 16%;
+  width: 65%;
+}
+.contact {
+  margin-top: 34%;
+  margin-left: 10%;
+  width: 65%;
+}
+.text {
+  margin-left: 14%;
+  width: 65%;
+}

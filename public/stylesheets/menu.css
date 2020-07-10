@@ -1,0 +1,7 @@
+.flex_line
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #BD896D;
+}
