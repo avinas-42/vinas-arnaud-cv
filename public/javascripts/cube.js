@@ -11,12 +11,15 @@ function changeSense()
     if (root.clientWidth < root.clientHeight)
     {
         root.style.setProperty('--size-to-use', "100vw");
-        console.log("vertical " + root.clientWidth +" | "+root.clientHeight);
+        root.style.setProperty('--place-face-min', "-50vw");
+        root.style.setProperty('--place-face-max', "50vw");
     }
     else
     {
+        
         root.style.setProperty('--size-to-use', "100vh");
-        console.log("horizontal " + root.clientWidth +" | "+root.clientHeight);
+        root.style.setProperty('--place-face-min', "-50vh");
+        root.style.setProperty('--place-face-max', "50vh");
     }
 }
 window.addEventListener('resize', changeSense);
