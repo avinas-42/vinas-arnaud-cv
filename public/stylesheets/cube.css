@@ -39,7 +39,13 @@ body { font-family: sans-serif; }
   position: absolute;
   width: var(--size-to-use);
   height: var(--size-to-use);
-
+}
+.cube_face_mobile {
+  position: absolute;
+  width: var(--size-to-use);
+  height: var(--size-to-use);
+  border: solid;
+  border-color: black;
 }
 .cube__face:hover {
   background-color: #3d3d3d;
