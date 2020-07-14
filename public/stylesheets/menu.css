@@ -1,16 +1,19 @@
 
 .prenom
 {
+    font: 40px "Lucida Grande", Helvetica, Arial, sans-serif;
     float: left;
     color: #615c99
 }
 .nom
 {
+    font: 40px "Lucida Grande", Helvetica, Arial, sans-serif;
     float: left;
     color: white;
 }
 h2
 {
+    font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
     color: white;
 }
 .flex_line
@@ -22,12 +25,14 @@ h2
 }
 button {
     background-color: #95b3c7;
-    min-width: 150px;
+    min-width: 200px;
     border: none;
     color: black;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin: 4px 2px;
     cursor: pointer;
+}
+button:hover {
+    background-color: #a5d9dc;
 }
