@@ -17,6 +17,7 @@ body { font-family: sans-serif; }
   transform-style: preserve-3d;
   transform: translateZ(-50vh);
   transition: transform 1s;
+  color: white;
 }
 
 .do-not-click {pointer-events:none;}
@@ -32,16 +33,16 @@ body { font-family: sans-serif; }
   position: absolute;
   width: 100vh;
   height: 100vh;
-  border: 2px solid black;
-  color: black;
+  border: solid;
+  border-color: black;
 }
 
-.cube__face--front  { background: #C7FFFD; opacity:0.9;} 
-.cube__face--right  { background: #77BD93; opacity:0.9;}
-.cube__face--back   { background: #C7FFFD; opacity:0.9;}
-.cube__face--left   { background: #77BD93; opacity:0.9;}
-.cube__face--top    { background: #BD93B4; opacity:0.9;}
-.cube__face--bottom { background: #BD93B4; opacity:0.9;}
+.cube__face--front  { background: #6f6f6f; opacity:0.9;} 
+.cube__face--right  { background: #6f6f6f; opacity:0.9;}
+.cube__face--back   { background: #6f6f6f; opacity:0.9;}
+.cube__face--left   { background: #6f6f6f; opacity:0.9;}
+.cube__face--top    { background: #6f6f6f; opacity:0.9;}
+.cube__face--bottom { background: #6f6f6f; opacity:0.9;}
 
 .cube__face--front  { transform: rotateY(  0deg) translateZ(50vh); }
 .cube__face--right  { transform: rotateY( 90deg) translateZ(50vh); }

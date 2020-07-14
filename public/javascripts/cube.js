@@ -2,6 +2,7 @@ var cube = document.querySelector('.cube');
 var currentClass = '';
 var oldElem = null;
 const doNotClick = 'do-not-click';
+const butSelect = 'but-select-anyway'
 const sourceToAdd = '<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;"> <iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/x770zyb?autoplay=0" width="100%" height="100%" allowfullscreen> </iframe> </div>'
 
 function sleep(duration) {
@@ -15,9 +16,11 @@ function rotate(elem) {
     var classToShow = 'show-' + elem.id;
     if ( oldElem )
     {
+        oldElem.classList.add(butSelect)
         oldElem.classList.remove(doNotClick);
     }
     elem.classList.add(doNotClick);
+    elem.classList.remove(butSelect);
     if ( currentClass ) {
         cube.classList.remove( currentClass );
     }
