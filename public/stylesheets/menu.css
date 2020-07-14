@@ -1,10 +1,15 @@
-nav
+
+.prenom
 {
+    float: left;
     color: #615c99
-
-
 }
-h3
+.nom
+{
+    float: left;
+    color: white;
+}
+h2
 {
     color: white;
 }
