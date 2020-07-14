@@ -9,15 +9,45 @@
     </header>
     <body>
         <div>
-            <input id="imunisation" type="checkbox">imunisation</input>
-            <input id="display" type="checkbox">affichage</input>
-            <br>
-            <input type="number" id="nbdaymin" value="8">jours d'incubation minimum</input>
-            <input type="number" id="nbdayvar" value="7">variation du temps d'incubation</input>
-            <br>
-            <input type="number" id="nbsafe" value="1000">personne</input>
-            <input type="number" id="nbsick" value="4">personne malade</input>
-            <br>
+            <div class="line">
+                <input id="imunisation" type="checkbox"></input> 
+                <p>imunisation</p>
+                <input id="display" type="checkbox"></input>
+                <p>affichage</p>
+
+                <input type="number" id="nbdaymin" value="8"></input>
+                <p>&nbspjours d'incubation minimum&nbsp</p>
+                <input type="number" id="nbdayvar" value="7"></input>
+                <p>&nbspvariation du temps d'incubation&nbsp</p>
+
+                <input type="number" id="nbsafe" value="1000"></input>
+                <p>&nbsppersonne&nbsp</p>
+                <input type="number" id="nbsick" value="4"></input>
+                <p>&nbsppersonne malade&nbsp</p>
+            </div>
+            <div class="line">
+                <div class="line">
+                    <div class="square blue"> </div> 
+                    <p>&nbsp: personne saine&nbsp</p>
+                </div>
+                <div class="line">
+                    <div class="square red"> </div> 
+                    <p>&nbsp: personne malade&nbsp</p>
+                </div>
+                <div class="line">
+                    <div class="square green"> </div> 
+                    <p>&nbsp: personne immuniser&nbsp</p>
+                </div>
+                <div class="line">
+                    <div class="linedraw blue"> </div> 
+                    <p>&nbsp: pourcentage de personne saine &nbsp</p>
+                </div>
+                <div class="line">
+                    <div class="linedraw red"> </div> 
+                    <p>&nbsp: pourcentage de personne malade &nbsp</p>
+                </div>
+            </div>
+            
             <button id="lancer" >lancer simulation</button>
         </div>
         <div class="content">

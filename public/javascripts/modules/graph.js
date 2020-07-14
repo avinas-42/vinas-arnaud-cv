@@ -1,5 +1,6 @@
 var canvas = document.getElementById('graph');
 var ctx = canvas.getContext('2d');
+
 var nbsafeinit = 3000;
 var nbsickinit = 100;
 
@@ -40,7 +41,6 @@ export function graph(nbsafe, nbsick) {
     oldsicky = sicky;
 }
 function drawline(x, oldx, y, oldy, color) {
-    
     ctx.beginPath();
     ctx.moveTo(oldx, oldy);
     ctx.lineTo(x, y);
