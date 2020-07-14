@@ -33,8 +33,10 @@ body { font-family: sans-serif; }
   position: absolute;
   width: 100vh;
   height: 100vh;
-  border: solid;
-  border-color: black;
+
+}
+.cube__face:hover {
+  background-color: #3d3d3d;
 }
 
 .cube__face--front  { background: #6f6f6f; opacity:0.9;} 
