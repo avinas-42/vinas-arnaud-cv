@@ -1,9 +1,25 @@
+var root = document.documentElement;
 var cube = document.querySelector('.cube');
 var currentClass = '';
 var oldElem = null;
 const doNotClick = 'do-not-click';
 const butSelect = 'but-select-anyway'
 const sourceToAdd = '<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;"> <iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/x770zyb?autoplay=0" width="100%" height="100%" allowfullscreen> </iframe> </div>'
+changeSense();
+function changeSense()
+{
+    if (root.clientWidth < root.clientHeight)
+    {
+        root.style.setProperty('--size-to-use', "100vw");
+        console.log("vertical " + root.clientWidth +" | "+root.clientHeight);
+    }
+    else
+    {
+        root.style.setProperty('--size-to-use', "100vh");
+        console.log("horizontal " + root.clientWidth +" | "+root.clientHeight);
+    }
+}
+window.addEventListener('resize', changeSense);
 
 function sleep(duration) {
 	return new Promise(resolve => {
