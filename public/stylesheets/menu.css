@@ -1,4 +1,8 @@
-
+.centre
+{
+    margin-top: -26px;
+    margin-bottom: -26px;
+}
 .prenom
 {
     font: 40px "Lucida Grande", Helvetica, Arial, sans-serif;
