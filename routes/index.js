@@ -10,9 +10,9 @@ router.get('/cv', function(req, res, next) {
   var ua = req.header('user-agent');
   // Check the user-agent string to identyfy the device. 
   if(/mobile|iphone|ipod|android|blackberry|opera|mini|windows\sce|palm|smartphone|iemobile|ipad|android|android 3.0|xoom|sch-i800|playbook|tablet|kindle/i.test(ua)) {
-    res.render('cv', {isMobile: true});
+    res.render('cv', { isMobile: true});
   } else {
-    res.render('cv', {isMobile: false});
+    res.render('cv', { isMobile: false});
   }
   
 });
