@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.redirect('/cv');
 });
 
 router.get('/cv', function(req, res, next) {
@@ -14,7 +14,6 @@ router.get('/cv', function(req, res, next) {
   } else {
     res.render('cv', { isMobile: false});
   }
-  
 });
 
 router.get('/pandesim', function(req, res, next) {
