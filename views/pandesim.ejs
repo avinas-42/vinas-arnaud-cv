@@ -4,60 +4,78 @@
     <link rel='stylesheet' href='/stylesheets/pandesim.css'>
 </head>
 <html>
-    <header>
-        <% include ./partials/menu.ejs %>
-    </header>
-    <body>
-        <div>
-            <div class="line">
-                <input id="imunisation" type="checkbox"></input> 
-                <p>&nbspimunisation&nbsp</p>
-                <input id="display" type="checkbox"></input>
-                <p>&nbspaffichage&nbsp</p>
+<header>
+    <% include ./partials/menu.ejs %>
+</header>
 
+<body>
+    <div>
+        <div class="line">
+            <div class="line">
                 <input type="number" id="nbdaymin" value="8"></input>
                 <p>&nbspjours d'incubation minimum&nbsp</p>
+            </div>
+            <div class="line">
                 <input type="number" id="nbdayvar" value="7"></input>
                 <p>&nbspvariation du temps d'incubation&nbsp</p>
-
-                <input type="number" id="nbsafe" value="1000"></input>
-                <p>&nbsppersonne&nbsp</p>
+            </div>
+            <div class="line">
                 <input type="number" id="nbsick" value="4"></input>
                 <p>&nbsppersonne malade&nbsp</p>
             </div>
-            <div class="line">
-                <div class="line">
-                    <div class="square blue"> </div> 
-                    <p>&nbsp: personne saine&nbsp</p>
-                </div>
-                <div class="line">
-                    <div class="square red"> </div> 
-                    <p>&nbsp: personne malade&nbsp</p>
-                </div>
-                <div class="line">
-                    <div class="square green"> </div> 
-                    <p>&nbsp: personne immuniser&nbsp</p>
-                </div>
-                <div class="line">
-                    <div class="linedraw blue"> </div> 
-                    <p>&nbsp: pourcentage de personne saine &nbsp</p>
-                </div>
-                <div class="line">
-                    <div class="linedraw red"> </div> 
-                    <p>&nbsp: pourcentage de personne malade &nbsp</p>
-                </div>
-            </div>
-            
-            <button id="lancer" >lancer simulation</button>
         </div>
-        <div class="content">
-            <canvas id="canvas" width="820" height="760" class="simu"></canvas>
-            <div class="ordo"> <p>100%</p> <p>50%</p> <p>0%</p> </div>
-            <div class="graph" >
-                <canvas id="graph" width="10000" height="750" ></canvas>
+        <div class="line">
+            <div class="line">
+                <input type="number" id="nbsafe" value="1000"></input>
+                <p>&nbsppersonne&nbsp</p>
+            </div>
+            <div class="line">
+                <input id="imunisation" type="checkbox"></input>
+                <p>&nbspimunisation&nbsp</p>
+            </div>
+            <div class="line">
+                <input id="display" type="checkbox"></input>
+                <p>&nbspaffichage&nbsp</p>
+            </div>
+        </div>
+        <div class="line">
+            <div class="line">
+                <div class="square blue"> </div>
+                <p>&nbsp: personne saine&nbsp</p>
+            </div>
+            <div class="line">
+                <div class="square red"> </div>
+                <p>&nbsp: personne malade&nbsp</p>
+            </div>
+            <div class="line">
+                <div class="square green"> </div>
+                <p>&nbsp: personne immuniser&nbsp</p>
+            </div>
+            <div class="line">
+                <div class="linedraw blue"> </div>
+                <p>&nbsp: pourcentage de personne saine &nbsp</p>
+            </div>
+            <div class="line">
+                <div class="linedraw red"> </div>
+                <p>&nbsp: pourcentage de personne malade &nbsp</p>
             </div>
         </div>
 
-        <script type="module" src="/javascripts/covid.js"></script> 
-    </body>
+        <button id="lancer">lancer simulation</button>
+    </div>
+    <div class="content">
+        <canvas id="canvas" width="820" height="760" class="simu"></canvas>
+        <div class="ordo">
+            <p>100%</p>
+            <p>50%</p>
+            <p>0%</p>
+        </div>
+        <div class="graph">
+            <canvas id="graph" width="10000" height="750"></canvas>
+        </div>
+    </div>
+
+    <script type="module" src="/javascripts/covid.js"></script>
+</body>
+
 </html>
